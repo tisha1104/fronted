@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first::first-letter{
+            color: brown;
+            font-size: 3em;
+        }
+        #sec::first-line{
+            color: blue;
+        }
+        h1::before{
+            content:'☆';
+        }
+        #sec::selection{
+            background-color: black;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>pseudo elements</h1>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium similique aperiam vel fuga consequuntur, culpa neque! Debitis consectetur mollitia impedit nostrum perspiciatis, sunt, quaerat dolor deleniti expedita ipsam eligendi minus.</p>
+    <p id="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br> Eveniet dicta quasi consequuntur qui quaerat dolores, cupiditate repellendus accusamus nisi dolor voluptatibus? Dignissimos, amet. Corporis, repellendus numquam maiores aut magnam vitae.</p>
+    
+</body>
+</html>

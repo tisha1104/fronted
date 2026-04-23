@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1{
+            color: brown;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+        .first{
+            color: aquamarine;
+            background-color: brown;
+        }
+        #sec{
+            color: rgb(32, 2, 59);
+            background-color: pink;
+        }
+        td,th{
+            border: 2px solid palevioletred;
+        }
+        table tr{
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css Selactor Example</h1>
+    <br>
+    <hr>
+    <hr>
+    <h2>Univarsal selctor(*)</h2>
+    <code>
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', <br> Geneva, Verdana, sans-serif;
+        }
+    </code>
+    <p style="color: yellow; background-color: blue">The universal selector is written as * and it means “apply this style to every element.”</p>
+    <br>    
+    <hr>
+    <hr>
+     <h2>Element Selctor</h2>
+     <code>
+        h1{
+            color: brown;<br>
+            background-color: whitesmoke; <br>
+            text-align: center;
+        }
+     </code>
+     <p style="color: purple; background-color: pink;">An element selector in CSS is used to select a specific HTML tag and apply style to it.</p>
+     <br>
+     <hr>
+     <hr>
+     <h2>Class Selctor(.)</h2>
+     <code>
+        .first{
+            color: aquamarine;
+            background-color: brown;
+        }
+     </code>
+     <p class="first">Class selector (.) is used to style multiple elements with the same class name</p>
+     <br>
+     <hr>
+     <hr>
+     <h2>Id Selctor(#)</h2>
+     <code></code>
+     <p id="sec">ID selector (#) is used to style one specific unique element.</p>
+     <br>
+     <hr>
+     <hr>
+     <h2>Group selector</h2>
+     <code>
+         td,th{
+            border: 2px solid palevioletred;
+        }
+     </code>
+     <p style="color: antiquewhite; background-color: black;">Group selector (,) is used to apply same style to multiple elements together.</p>
+     <table>
+        <thead>
+            <tr>
+                <th>Heading-1</th>
+                <th>Heading-2</th>
+                <th>Heading-3</th>
+                <th>Heading-4</th>
+                <th>Heading-5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+               <td>Table-data-1</td>
+               <td>Table-data-1</td>
+               <td>Table-data-1</td>
+               <td>Table-data-1</td>
+               <td>Table-data-1</td>
+            </tr>
+            <tr>
+                <td>Table-data-2</td>
+                <td>Table-data-2</td>
+                <td>Table-data-2</td>
+                <td>Table-data-2</td>
+                <td>Table-data-2</td>
+            </tr>
+            <tr>
+                <td>Table-data-3</td>
+                <td>Table-data-3</td>
+                <td>Table-data-3</td>
+                <td>Table-data-3</td>
+                <td>Table-data-3</td>
+            </tr>
+            <tr>
+                <td>table-data-4</td>
+                <td>table-data-4</td>
+                <td>table-data-4</td>
+                <td>table-data-4</td>
+                <td>table-data-4</td>
+            </tr>
+            <tr>
+                <td>Table-data-5</td>
+                <td>Table-data-5</td>
+                <td>Table-data-5</td>
+                <td>Table-data-5</td>
+                <td>Table-data-5</td>
+            </tr>
+        </tbody>
+     </table>
+     <br>
+     <br>
+     <hr>
+     <h2>Css Descendant Selector</h2>
+     <code>
+         table tr{
+            background-color: blanchedalmond;
+        }
+     </code>
+     <p style="color: brown; background-color: yellow;">Descendant selector (space) selects elements inside another element.</p>
+</body>
+</html>
