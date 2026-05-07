@@ -17,5 +17,10 @@
         padding: 10px 30px;
         grid-template-columns: 1fr;
      }
-
+     .service{
+        padding: 50px 30px;
+     }
+     .service-row{
+        grid-template-columns: 1fr;
+     }
 }
