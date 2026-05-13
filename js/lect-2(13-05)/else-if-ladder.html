@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 5px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+
+    </div>
+    <button onclick="changeColor('pink')">pink</button>
+    <button onclick="changeColor('blue')">Blue</button>
+    <button onclick="changeColor('red')">Red</button>
+
+    <script>
+        function changeColor(colorName){
+            let box1=document.getElementById('box');
+            
+            if(colorName=='pink'){
+                box1.style.backgroundColor='pink'
+            }
+            else if (colorName=='blue'){
+                 box1.style.backgroundColor='blue'
+            }
+            else if (colorName=='red'){
+                 box1.style.backgroundColor='red'
+            }
+            else {
+                 box1.style.backgroundColor='white'
+            }
+        }
+    </script>
+</body>
+</html>

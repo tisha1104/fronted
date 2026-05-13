@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <label for="">Enter Number</label>
+        <input type="text" name="" id="num1">
+        <br>
+        <br>
+        <label for="">Enter Number</label>
+        <input type="text" name="" id="num2">
+        <br>
+        <br>
+        <input type="button" value="submit" onclick="simpalecalc()">
+        <div class="box" id="box">
+
+        </div>
+
+        <script>
+            function simpalecalc(){
+                let num1=document.getElementById('num1').value;
+                let num2=document.getElementById('num2').value;
+
+                // num1=Number(num1)
+                // num2=Number(num2)
+
+                num1=+num1
+                num2=+num2
+
+                let str=`
+                        Addition=${num1+num2}<br>
+                        sub=${num1-num2}<br>
+                        mul=${num1*num2}<br>
+                        div=${num1/num2}<br>
+                        modulo=${num1/num2}<br>
+                        explorestion=${num1**num2}<br>`
+
+                        document.getElementById('box').innerHTML=str
+            }
+        let n = 2;
+        console.log(n);
+        
+        n = n + 5;
+          console.log(n);
+        n = n * 2;
+          console.log(n);
+
+          console.log('2'===2);
+          
+        </script>
+    </fieldset>
+</body>
+</html>
