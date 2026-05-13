@@ -1,0 +1,184 @@
+==================1. JavaScript Introduction==========================
+
+Question 1: What is JavaScript? Explain the role of JavaScript in web development.
+
+ANS.============> What is JavaScript:-
+
+JavaScript is a scripting and programming language used to make webpages interactive and dynamic. It works with HTML and CSS to add functionality to websites.
+
+===========> Role of JavaScript in Web Development:-
+--->Adds interactivity to webpages
+--->Validates forms
+--->Creates animations and effects
+--->Updates content without reloading the page
+--->Used for frontend and backend development
+
+===> JavaScript is an important technology for creating modern web applications.
+
+<<<<================================================================================================================================>>>>
+
+Question 2: How is JavaScript different from other programming languages like Python or Java?
+
+ANS.=============> Difference Between JavaScript, Python, and Java:-
+
+--->JavaScript is mainly used for web development and runs inside web browsers to make webpages interactive.
+
+--->Python is a simple and powerful language mostly used for data science, AI, automation, and backend development.
+
+--->Java is a strongly typed programming language mainly used for Android apps, desktop software, and large enterprise applications.
+
+--->Unlike Python and Java, JavaScript is directly supported by web browsers and is mainly focused on webpage behavior and interactivity.
+
+<<<<================================================================================================================================>>>>
+
+Question 3: Discuss the use of <script> tag in HTML. How can you link an external JavaScript file to an HTML document?
+
+ANS.===============> Use of <script> Tag in HTML:-
+
+--->The <script> tag is used to add JavaScript code inside an HTML document. It helps make webpages interactive and dynamic.
+
+==================> JavaScript can be written:-
+
+--->Inside the HTML file (internal JavaScript)
+--->In a separate file (external JavaScript)
+
+==================> Linking an External JavaScript File:-
+
+--->An external JavaScript file is linked using the src attribute inside the <script> tag.
+
+==================> Example:-
+
+<script src="script.js"></script>
+
+--->Here, script.js is the external JavaScript file connected to the HTML document.
+
+<<<<================================================================================================================================>>>>
+<<<<================================================================================================================================>>>>
+<<<<================================================================================================================================>>>>
+
+==================2. Variables and Data Types==========================
+
+Question 1: What are variables in JavaScript? How do you declare a variable using var, let, and const?
+
+ANS. ===============> Variables in JavaScript:-
+--->Variables are used to store data in JavaScript such as numbers, text, or values.
+
+===================> JavaScript provides three ways to declare variables:-
+
+1. var
+--->var is the old way to declare variables. Its value can be changed.
+var name = "Tisha";
+
+2. let
+--->let is used to declare variables whose value can be changed.
+let age = 20;
+
+3. const
+--->const is used to declare variables whose value cannot be changed.
+const pi = 3.14;
+
+<<<<================================================================================================================================>>>>
+
+Question 2: Explain the different data types in JavaScript. Provide examples for each.
+
+ANS. ===============> Different Data Types in JavaScript:-
+
+===========>JavaScript data types are mainly divided into two types:-
+
+1. Primitive Data Types:-
+
+--->Primitive data types store single values.
+
+==============> Types of Primitive Data Types:-
+a) Number
+
+--->Stores numeric values.
+--->let age = 20;
+
+b) String
+
+--->Stores text or characters.
+--->let name = "Tisha";
+
+c) Boolean
+
+--->Stores true or false values.
+--->let isStudent = true;
+
+d) Undefined
+
+--->A variable declared but not assigned a value.
+--->let x;
+
+e) Null
+
+--->Represents an empty value.
+--->let data = null;
+
+f) BigInt
+
+--->Stores very large numbers.
+--->let bigNumber = 12345678901234567890n;
+
+g) Symbol
+
+--->Stores unique values.
+--->let id = Symbol("id");
+
+2. Non-Primitive Data Types:-
+
+--->Non-primitive data types can store multiple values or complex data.
+
+============> Types of Non-Primitive Data Types:-
+
+a) Object
+
+--->Stores data in key-value pairs.
+-->let person = {
+    name: "Rani",
+    age: 20
+    };
+
+b) Array
+
+--->Stores multiple values in a single variable.
+--->let colors = ["Red", "Blue", "Green"];
+
+==============> Conclusion:-
+
+--->JavaScript provides different data types to store different kinds of data. They are mainly classified into primitive and non-primitive data types.
+
+<<<<================================================================================================================================>>>>
+
+Question 3: What is the difference between undefined and null in JavaScript?
+
+ANS. ======================> Difference Between Undefined and Null in JavaScript:-
+
+--->undefined and null both represent empty values, but they are different in JavaScript.
+
+=========================> Undefined:-
+
+--->A variable has the value undefined when it is declared but not assigned any value.
+--->Example:-
+    let x;console.log(x);
+ --> Output:
+    undefined
+
+====================> Null:-
+
+--->null is an intentional empty value assigned by the programmer.
+--->Example:-
+    let data = null;console.log(data);
+ -->Output:
+    null
+
+==============> Main Difference:-
+--->undefined means value is not assigned.
+--->null means an empty value is assigned intentionally.
+
+<<<<================================================================================================================================>>>>
+<<<<================================================================================================================================>>>>
+<<<<================================================================================================================================>>>>
+
+==================3. JavaScript Operators==========================
+
