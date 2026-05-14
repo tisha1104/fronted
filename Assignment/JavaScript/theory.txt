@@ -182,3 +182,225 @@ ANS. ======================> Difference Between Undefined and Null in JavaScript
 
 ==================3. JavaScript Operators==========================
 
+Question 1: What are the different types of operators in JavaScript? Explain with examples.
+o Arithmetic operators
+o Assignment operators
+o Comparison operators
+o Logical operators
+
+ANS. ======================> Types of Operators in JavaScript:-
+
+--->Operators are symbols used to perform operations on values and variables in JavaScript.
+
+1. Arithmetic Operators:-
+
+--->Arithmetic operators are used for mathematical calculations.
+
+   Operator	                 Meaning	        Example
+    +	                     Addition	         5 + 2
+    -	                     Subtraction	     5 - 2
+    *	                     Multiplication	     5 * 2
+    /		                 Division            5 / 2
+    %	                     Modulus	         5 % 2
+
+--->Example:-
+
+let a = 10;
+let b = 5;
+
+console.log(a + b);
+console.log(a - b);
+
+2. Assignment Operators:-
+
+--->Assignment operators are used to assign values to variables.
+
+Operator	Example
+  =	        x = 10
+ +=	        x += 5
+ -=	        x -= 5
+ *=	        x *= 2
+
+--->Example:-
+
+let x = 10;
+x += 5;
+
+console.log(x);
+
+3. Comparison Operators:-
+
+--->Comparison operators compare two values and return true or false.
+
+Operator	     Meaning
+ ==	              Equal to
+ ===	        Strict equal to
+ !=	            Not equal to
+ >	            Greater than
+ <	            Less than
+
+--->Example:-
+
+let a = 10;
+let b = 5;
+
+console.log(a > b);
+console.log(a == b);
+
+4. Logical Operators:-
+
+--->Logical operators are used to combine conditions.
+
+Operator	Meaning
+ &&	         AND
+ ||	          OR
+ !	         NOT
+
+--->Example:-
+
+let age = 20;
+
+console.log(age > 18 && age < 30);
+
+=============>Conclusion:-
+
+--->JavaScript operators help perform calculations, assign values, compare data, and combine conditions in programs.
+
+<<<<==================================================================================================================>>>>
+
+Question 2: What is the difference between == and === in JavaScript?
+
+ANS.=======================> Difference Between == and === in JavaScript:-
+
+--->Both == and === are comparison operators used to compare values in JavaScript, but they work differently.
+
+1. == (Equal to):-
+
+---> == compares only the values, not the data types.
+
+--->Example:-
+
+console.log(5 == "5");
+
+--->Output:-
+
+true
+
+--->Here, JavaScript converts the string "5" into number 5, so the result is true.
+
+2. === (Strict Equal to):-
+
+---> === compares both value and data type.
+
+--->Example:-
+
+console.log(5 === "5");
+
+--->Output:-
+
+false
+
+--->Here, one value is a number and the other is a string, so the result is false.
+
+===============>Main Difference:-
+
+---> == checks only values.
+
+---> === checks both values and data types.
+
+<<<<=================================================================================================================>>>>
+<<<<==================================================================================================================>>>>
+<<<<==================================================================================================================>>>>
+
+==================4. Control Flow (If-Else, Switch)==========================
+
+Question 1: What is control flow in JavaScript? Explain how if-else statements work with an example.
+
+ANS. ======================> Control Flow in JavaScript:-
+
+--->Control flow is the order in which the program executes statements and conditions in JavaScript. It helps the program make decisions based on different conditions.
+
+=======>if-else Statement:-
+
+--->The if-else statement is used to check a condition.
+--->If the condition is true, the if block executes.
+--->If the condition is false, the else block executes.
+
+==========>Syntax:-
+    if(condition){
+        // code
+    }
+    else{
+        // code
+    }
+
+--->Example:-
+
+let age = 20;
+
+    if(age >= 18){
+        console.log("You can vote");
+    }
+    else{
+        console.log("You cannot vote");
+    }
+
+--->Output:-
+You can vote
+
+=====>Conclusion:-
+--->The if-else statement helps JavaScript programs make decisions based on conditions.
+
+<<<<==================================================================================================================>>>>
+
+Question 2: Describe how switch statements work in JavaScript. When should you use a switch statement instead of if-else?
+
+ANS. =======================> Switch Statement in JavaScript
+
+--->A switch statement is used to check multiple conditions using different cases. It executes the block of code that matches the given value.
+
+=============>Syntax:-
+
+switch(expression){
+    case value1:
+        // code
+        break;
+
+    case value2:
+        // code
+        break;
+
+    default:
+        // code
+}
+
+--->Example:-
+
+let day = 2;
+
+switch(day){
+    case 1:
+        console.log("Monday");
+        break;
+
+    case 2:
+        console.log("Tuesday");
+        break;
+
+    case 3:
+        console.log("Wednesday");
+        break;
+
+    default:
+        console.log("Invalid Day");
+}
+
+--->Output:-
+
+Tuesday
+
+==================>When to Use switch Instead of if-else:-
+
+--->Use switch when there are many possible values for one variable.
+--->It makes the code cleaner and easier to read compared to multiple if-else statements.
+--->if-else is better for complex conditions or ranges.
