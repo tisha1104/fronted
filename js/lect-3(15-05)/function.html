@@ -22,7 +22,53 @@
             return num*num;
          }
          console.log("Squar=",squarFind(12));
-         
+        //============recursive function==================
+        function factfind(num){
+            if (num==1){
+                return 1;
+            }
+            let f=num*factfind(num-1)
+            return f;
+        }
+        console.log("Factorial=",factfind(5));
+        //============function  with default value==================
+        function add(x,y,z=0){
+            console.log("Addition=",x+y+z);
+        }
+        add(1,2,3)
+        add(1,2)
+        //====function as expression====
+         let Sayhello=function(){
+            console.log("Hello World!");
+         }
+         Sayhello()
+        //================callback ===========
+        function Even(num){
+            console.log(`${num} is even`);
+        }
+        function Odd(num){
+            console.log(`${num} is odd`);            
+        }
+        function Findevenodd(cb1,cb2){
+            let num=prompt('Enter A Number')
+            if(num%2==0){
+                cb1(num)
+            }
+            else{
+                cb2(num)
+            }
+        }
+        // Findevenodd(Even,Odd)
+        // ================Arrow function==============
+        let sum=(a,b)=> a+b;
+        console.log(sum(10,5));
+        
+        let Area=(r)=>{
+            let a=3.14*r*r;
+            return a
+        }
+        console.log("Area Of Circle=",Area(2));
+        
     </script>
 </body>
 </html>
