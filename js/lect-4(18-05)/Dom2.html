@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <button onclick="ChangeColor()">Click</button>
+
+    <script>
+        function ChangeColor(){
+            let box_1=document.getElementsByClassName('box');
+            console.log(box_1);
+            for (i=0;i<box_1.length;i++){
+                if(i%2==0){
+                    box_1[i].style.backgroundColor='yellow'
+                }
+                else{
+                    box_1[i].style.backgroundColor='blue'
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
