@@ -482,4 +482,164 @@ while(i <= 5);
 
 Question 2: What is the difference between a while loop and a do-while loop?
 
-ANS. 
+ANS. ==================> Difference Between while Loop and do-while Loop:-
+
+--->Both while and do-while loops are used to repeat code in JavaScript, but they work differently.
+
+========>while Loop:-
+
+--->In a while loop, the condition is checked before executing the code.
+--->If the condition is false, the loop will not run.
+
+--->Example:-
+
+    let i = 1;
+
+    while(i <= 5){
+        console.log(i);
+        i++;
+    }
+
+==========>do-while Loop:-
+
+--->In a do-while loop, the code executes first and then the condition is checked.
+--->So, the loop runs at least one time even if the condition is false.
+
+--->Example:-
+
+    let i = 1;
+
+    do{
+        console.log(i);
+        i++;
+    }
+    while(i <= 5);
+
+=========>Main Difference:-
+
+--->while checks the condition before execution.
+--->do-while checks the condition after execution.
+--->do-while always runs at least one time.
+
+<<<<=================================================================================================================>>>>
+<<<<==================================================================================================================>>>>
+<<<<==================================================================================================================>>>>
+
+==================6. Functions==========================
+
+Question 1: What are functions in JavaScript? Explain the syntax for declaring and calling a function
+
+ANS. =================>Functions in JavaScript:-
+
+--->Functions are blocks of code used to perform a specific task. They help make code reusable and organized.
+
+--->Syntax for Declaring a Function:-
+
+function functionName(){
+    // code
+}
+
+----->Example of Function Declaration:-
+
+function greet(){
+    console.log("Hello");
+}
+
+----->Calling a Function:-
+
+--->A function is executed by calling its name followed by parentheses ().
+--->greet();
+
+--->Complete Example:-
+
+function greet(){
+    console.log("Hello");
+}
+
+greet();
+
+--->Output:-
+
+Hello
+
+======>Conclusion:-
+
+--->Functions are used to perform tasks and reuse code in JavaScript programs.
+
+<<<<==================================================================================================================>>>>
+
+Question 2: What is the difference between a function declaration and a function expression?
+
+ANS. ====================>Difference Between Function Declaration and Function Expression:-
+
+--->Both function declaration and function expression are used to create functions in JavaScript, but they are written differently.
+
+1. Function Declaration:-
+
+--->A function is declared using the function keyword with a function name.
+
+--Example
+function greet(){
+    console.log("Hello");
+}
+
+--->The function can be called before or after its declaration.
+
+2. Function Expression:-
+
+--->A function is stored inside a variable.
+
+--->Example:-
+
+    let greet = function(){
+        console.log("Hello");
+    };
+
+--->The function can only be called after the function expression is defined.
+
+=======>Main Difference:-
+
+--->Function declaration creates a named function directly.
+--->Function expression stores a function inside a variable.
+--->Function declarations can be used before declaration, but function expressions cannot.
+
+
+Question 3: Discuss the concept of parameters and return values in functions.
+
+ANS. ====================> Parameters and Return Values in Functions:-
+
+======>Parameters:-
+
+--->Parameters are variables passed into a function. They allow functions to receive input values.
+
+---->Example:-
+
+    function add(a, b){
+        console.log(a + b);
+    }
+
+    add(5, 3);
+
+--->Here, a and b are parameters.
+
+========>Return Values:-
+
+--->A return value is the value that a function sends back using the return keyword.
+
+----->Example:-
+
+    function add(a, b){
+        return a + b;
+    }
+
+    let result = add(5, 3);
+    console.log(result);
+
+--->Output:-
+    --->8
+
+==============>Conclusion:-
+
+--->Parameters are used to pass values into a function.
+
+--->Return values are used to send values back from a function.
