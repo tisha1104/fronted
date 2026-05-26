@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 600px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .main img{
+            height: 100%;
+            width: 100%;
+            display: none;
+        }
+        #img-1{
+            display: block;
+        }
+        #left{
+            position: absolute;
+            left: 20px;
+            top: 50%;
+        }
+        #right{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+        }
+        /* button{
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button id="left">Left</button>
+        <button id="right">Right</button>
+        <img src="pic-1.jpg" alt="" id="img-1">
+        <img src="pic-2.jpg" alt="" id="img-2">
+        <img src="pic-3.jpg" alt="" id="img-3">
+    </div>
+    <script>
+        let counter=1;
+        document.getElementById('right').addEventListener('click',function(){
+            console.log(("befoer",counter));
+            let preImg="img-"+counter;
+            document.getElementById(preImg).style.display="none";
+            if(counter==3){
+                counter=0
+            }
+            counter++;
+            let curImg="img-"+counter;
+            console.log("after",counter);
+            document.getElementById(curImg).style.display="block";            
+        })
+
+        document.getElementById('left').addEventListener('click',function(){
+            console.log("Leftbar",counter);
+            let preImg="img-"+counter;
+            document.getElementById(preImg).style.display="none";
+
+            counter--;
+            if(counter==0){
+                counter=3;
+            }
+            let curImg="img-"+counter;
+            document.getElementById(curImg).style.display="block";
+        })
+    </script>
+</body>
+</html>
