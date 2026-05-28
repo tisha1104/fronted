@@ -603,6 +603,7 @@ function greet(){
 --->Function expression stores a function inside a variable.
 --->Function declarations can be used before declaration, but function expressions cannot.
 
+<<<<==================================================================================================================>>>>
 
 Question 3: Discuss the concept of parameters and return values in functions.
 
@@ -643,3 +644,183 @@ ANS. ====================> Parameters and Return Values in Functions:-
 --->Parameters are used to pass values into a function.
 
 --->Return values are used to send values back from a function.
+
+<<<<=================================================================================================================>>>>
+<<<<==================================================================================================================>>>>
+<<<<==================================================================================================================>>>>
+
+==================7. Arrays==========================
+
+Question 1: What is an array in JavaScript? How do you declare and initialize an array?
+
+ANS.=====================> An array in JavaScript is a variable that is used to store multiple values in a single variable. 
+--->Arrays help organize and manage collections of data easily.
+--->Arrays are declared using square brackets [ ] and values are separated by commas.
+
+========>Syntax:-
+
+let arrayName = [value1, value2, value3];
+
+--->Example:-
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+--->In this example, fruits is an array containing three values: Apple, Banana, and Mango.
+
+<<<<==================================================================================================================>>>>
+
+Question 2: Explain the methods push(), pop(), shift(), and unshift() used in arrays.
+
+ANS.=============>In JavaScript, arrays have different methods to add or remove elements.
+
+1. push():-
+   
+--->The `push()` method is used to add an element at the end of an array.
+
+--->Example:-
+
+let fruits = ["Apple", "Banana"];
+fruits.push("Mango");
+console.log(fruits);
+
+--->Output:-
+["Apple", "Banana", "Mango"]
+
+2. pop():-
+   
+--->The `pop()` method is used to remove the last element from an array.
+
+--->Example:-
+
+let fruits = ["Apple", "Banana", "Mango"];
+fruits.pop();
+console.log(fruits);
+
+--->Output:-
+["Apple", "Banana"]
+
+3. shift():-
+
+--->The `shift()` method is used to remove the first element from an array.
+
+--->Example:-
+ 
+let fruits = ["Apple", "Banana", "Mango"];
+fruits.shift();
+console.log(fruits);
+
+--->Output:-
+["Banana", "Mango"]
+
+4. unshift():-
+
+--->The `unshift()` method is used to add an element at the beginning of an array.
+
+--->Example:-
+
+let fruits = ["Banana", "Mango"];
+fruits.unshift("Apple");
+console.log(fruits);
+
+--->Output:-
+["Apple", "Banana", "Mango"]
+
+<<<<=================================================================================================================>>>>
+<<<<==================================================================================================================>>>>
+<<<<==================================================================================================================>>>>
+
+==================8. Objects==========================
+
+Question 1: What is an object in JavaScript? How are objects different from arrays?
+
+ANS. =================> An object in JavaScript is a variable that stores data in the form of key-value pairs. Objects are used to represent real-world entities with properties and values.
+
+--->Example:-
+
+let car = {
+    brand: "Jaguar",
+    model: "XF",
+    year: 2024
+};
+
+--->In this example:-
+brand, model, and year are keys (properties).
+"Jaguar", "XF", and 2024 are values.
+
+=========>Difference Between Objects and Arrays:-0
+
+        Object	                                         Array
+Stores data as key-value pairs     	    Stores multiple values in order
+Uses curly brackets { }                 Uses square brackets [ ]
+Access data using keys	                Access data using index numbers
+Example: car.brand	                    Example: fruits[0]
+
+--->Array Example:-
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+--->Object Example:-
+
+let student = {
+    name: "Ranu",
+    age: 21
+};
+
+<<<<==================================================================================================================>>>>
+
+Question 2: Explain how to access and update object properties using dot notation and bracket notation.
+
+ANS. ===============> In JavaScript, object properties can be accessed and updated using two methods:-
+
+        1.Dot Notation
+        2.Bracket Notation
+
+--->Example Object:-
+
+let car = {
+    brand: "Jaguar",
+    model: "XF",
+    year: 2024
+};
+
+===========>Dot Notation:-
+
+--->Dot notation is used by writing the object name followed by a dot (.) and the property name.
+
+--->Accessing Properties:-
+
+console.log(car.brand);
+console.log(car.model);
+
+--->Updating Properties:-
+
+car.year = 2025;
+
+console.log(car.year);
+
+=============>Bracket Notation:-
+
+--->Bracket notation is used by writing the property name inside square brackets [ ] with quotes.
+
+--->Accessing Properties:-
+
+console.log(car["brand"]);
+console.log(car["model"]);
+
+--->Updating Properties:-
+
+car["year"] = 2026;
+
+console.log(car["year"]);
+
+=========>Difference:-
+
+--->Dot notation is simple and commonly used.
+--->Bracket notation is useful when property names contain spaces or are stored in variables.
+
+--->Example:-
+
+
+let propertyName = "brand";
+
+console.log(car[propertyName]);
