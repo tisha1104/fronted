@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let salary=[12000,30000,20000,45000,50000]
+        let updatesalary = salary.map((item,index)=>{
+            item=item+(item*0.1)
+            return item
+        })
+        console.log(updatesalary);
+        
+        let numArray=[1,2,3,34,11,21,234,5,6,7,8,12,15];
+
+        function compare(a,b){
+            if(a>b) return 1;
+            if(a==b) return 0;
+            if(a<b) return -1;
+        }
+        console.log(numArray.sort(compare));
+        console.log(numArray.reverse());
+        
+        let hobbyArray=['Cooking','Gaming','reading'];
+
+        let hobbystr=hobbyArray.join("-");
+        console.log(hobbystr);
+
+        let Arr=hobbystr.split("-");
+        console.log(Arr);
+        
+        
+        let totalsalary=updatesalary.reduce((sum,item,index)=>{
+            sum=sum+item
+            return sum
+        })
+
+        console.log(totalsalary);
+        
+    </script>
+</body>
+</html>
