@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function product(pname,price,desc){
+            this.pname=pname;
+            this.price=price;
+            this.desc=desc;
+        }
+
+        let p1=new product('laptop',190000,"Dell")
+        console.log(p1);
+
+        let p2=new product('Mobile',150000,"Iphone")
+        console.log(p2);
+        
+        let address={
+            // street:"101 Main street"
+        }
+        
+        console.log(address.street?address.street:undefined);
+
+        console.log(address.street&&address.street);
+        
+        
+    </script>
+</body>
+</html>
