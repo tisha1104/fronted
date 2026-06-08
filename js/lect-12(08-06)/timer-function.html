@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            width: 60px;
+            height: 60px;
+            border: 6px solid #ddd;
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+            margin: 100px auto;
+        }
+
+        @keyframes spin {
+            0%{
+                border-top: 6px solid #3498db;
+            }
+            25%{
+                border-right: 6px solid #3498db;
+            }
+            50%{
+                border-bottom: 6px solid #3498db;
+            }
+            75%{
+                border-top: 6px solid #3498db;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div id="main">
+    <div id="load" class="loader">
+        
+    </div>
+   </div> 
+   <script>
+    let counter=0;
+    function pritdata(){
+        document.getElementById('load').style.display="none";
+        document.getElementById('main').innerHTML=`<h1>Hello World</h1>`
+    }
+
+    setTimeout(pritdata,2000);
+
+    function printcounter(){
+        counter++;
+        console.log('counter='+counter);
+        
+    }
+    // setInterval(printcounter,1000);
+   </script>
+</body>
+</html>
