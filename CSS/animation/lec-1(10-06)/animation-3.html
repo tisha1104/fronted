@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            animation-name: imgMove;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes imgMove {
+            0%{
+                transform: translate(0px);
+            }
+            100%{
+                transform: translate(1100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="image1-removebg-preview.png" alt="">
+</body>
+</html>
