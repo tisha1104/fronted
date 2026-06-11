@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Account{
+            constructor(accno,holder,initBal){
+                this.accno=accno;
+                this.holder=holder;
+                this.initBal=initBal;
+            }
+            printPass(){
+                console.log(`
+                    customer name=${this.holder}
+                    Account no=${this.accno}
+                    Balance:${this.initBal}`);
+            }
+
+            display(){
+                console.log("Parent Class Display Method Calling....");
+                
+            }
+
+        }
+        class CurrentAccount extends Account{
+            constructor(accno,holder,initBal,rate){
+                super(accno,holder,initBal);
+                this.rate=rate;
+            }
+            printBal(){
+                this.initBal=this.initBal-(this.initBal*this.rate)
+                console.log(`Bal:${this.initBal}`);
+                
+            }
+
+            display(){
+                super.display();
+                console.log("Child Class Display Method Calling....");
+                
+            }
+
+        }
+
+        let acc1=new CurrentAccount("1010101111101","tisha","11000",0.02)
+        acc1.printPass();
+        acc1.printBal();
+        acc1.display();
+
+    </script>
+</body>
+</html>

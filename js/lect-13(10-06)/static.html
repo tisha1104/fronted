@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Test{
+            static s;
+            #privatedata="test data"
+            constructor(x){
+                this.x=x;
+                console.log(this.#privatedata);
+                
+            }
+
+            printdata(){
+                console.log(`x=${this.x}`);
+                console.log(`static data s=${Test.s}`);
+                
+            }
+            //static method
+            static printstaticdata(){
+                console.log(`static data s=${Test.s}`);
+                
+            }
+        } 
+        Test.s=100;
+
+        let t1=new Test(12);
+        let t2=new Test(2);
+        let t3=new Test(1);
+        t1.printdata();
+        t2.printdata();
+        t3.printdata();
+        Test.printstaticdata();
+        // console.log(t1.#privatedata);=> genrate error
+        
+    </script>
+</body>
+</html>
