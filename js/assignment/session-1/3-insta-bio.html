@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> insta-bio</title>
+</head>
+<body>
+    <button onclick="showbio()">Show Bio</button>
+    <button id="btn">Show Greeting</button>
+
+    <h2>Top 3 Food Apps</h2>
+
+    <script>
+        alert('Welcome to your Insta Bio-Link Page!')
+
+        function showbio(){
+            alert("Name:- Tisha  favorite app:- Instagram");
+        }
+
+        let button=document.querySelector("#btn")
+        
+        button.addEventListener('click',function(){
+            alert('Hello from JS!')
+        })
+        
+        let text=document.querySelector('h2')
+
+        text.style.color="green"
+
+    </script>
+</body>
+</html>
