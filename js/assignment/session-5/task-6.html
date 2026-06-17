@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let formatFollowers =(followers)=>{
+            if(followers>=1000000){
+                return(followers/1000000)+"M";
+            }else if(followers>=1000){
+                return(followers/1000)+"k";
+            }else{
+                return followers + " Followers"
+            }
+        }
+        console.log(formatFollowers(prompt("Enter Followers")));
+       
+        
+    </script>
+</body>
+</html>

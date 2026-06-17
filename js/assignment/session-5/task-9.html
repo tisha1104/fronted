@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createLikeButton(label, color){
+          let button=document.createElement('button');
+          button.innerHTML=label;
+          button.style.backgroundColor=color;
+          button.style.color="white"
+          return button;  
+        }
+        let likebutton=createLikeButton("Tisha","green")
+        document.body.appendChild(likebutton)
+    </script>
+</body>
+</html>

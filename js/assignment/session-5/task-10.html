@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function showMenuItem(name, price){
+            let menuitem=document.createElement('div')
+            menuitem.innerHTML=`
+                <h3>${name}</h3>
+                <p>Price:${price}</p>`;
+                menuitem.style.border="2px solid black";
+                menuitem.style.padding="10px";
+                menuitem.style.margin="10px";
+                menuitem.style.width="200px";
+                menuitem.style.borderRadius="5px";
+                menuitem.style.backgroundColor="purple";
+                menuitem.style.color="black";
+
+                return menuitem
+        } 
+        let item1=showMenuItem("Cold Cofee",150);
+        let item2=showMenuItem("Pizza",499);
+        let item3=showMenuItem("Pasta",350)
+
+        document.body.appendChild(item1)
+        document.body.appendChild(item2)
+        document.body.appendChild(item3)
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My Playlist</h2>
+
+    <input type="text" placeholder="Enter Song Name">
+    <button>Add Song</button>
+    <ul id="playlist"></ul>
+
+    <script>
+        let input=document.querySelector("input");
+        let button=document.querySelector("button");
+        let playlist=document.querySelector("#playlist");
+
+        button.addEventListener("click",function(){
+            let songname=input.value
+            if(songname !== ""){
+                let li=document.createElement("li");
+                li.innerHTML=songname
+
+                playlist.appendChild(li);
+                input.value="";
+            }
+        });
+    </script>
+</body>
+</html>
