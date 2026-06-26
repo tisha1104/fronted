@@ -8,5 +8,24 @@
 <body>
     <h2>My Friends</h2>
     <input type="text" placeholder="Ente Your Friend Name">
+    <button>Add Here!</button>
+    <ul id="friendlist"></ul>
+
+    <script>
+        let input=document.querySelector('input');
+        let button=document.querySelector('button');
+        let friendlist=document.querySelector("#friendlist")
+
+        button.addEventListener('click',function(){
+            let friends=input.value;
+            if(friends !== ""){
+              let li=document.createElement('li');
+              li.innerHTML=friends;
+              
+              friendlist.appendChild(li);
+              input.value="";
+            }
+        });
+    </script>
 </body>
 </html>

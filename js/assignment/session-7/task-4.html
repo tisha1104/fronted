@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Username Form</h2>
+    <label for="username">Username</label>
+    <input type="text" id="username" placeholder="Enter Your Username" onchange="showUsername()">
+
+    <script>
+        function showUsername(){
+            let username=document.getElementById("username").value;
+            console.log("Username:",username);
+        }
+    </script>
+</body>
+</html>

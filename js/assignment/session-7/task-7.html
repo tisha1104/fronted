@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color:rgb(207, 25, 86);
+            border: 0px;
+            border-radius: 2px;
+            padding: 10px;
+            margin-top: 10%;
+            margin-left: 50%;
+
+        }
+        p{
+            margin-top: 200px;
+            margin-left: 500px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            font-weight: bolder;
+            color: rgb(223, 87, 8);
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</p>
+   <button id="likebtn">❤️ Like (0)</button> 
+   <script>
+    let likecounter=0;
+    const likebtn=document.getElementById('likebtn');
+    likebtn.addEventListener("click",function(){
+        likecounter++;
+        likebtn.textContent=`❤️ Like${likecounter}`;
+    });
+   </script>
+</body>
+</html>

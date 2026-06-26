@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Now Playing:
+        <span id="curent-song">tere naina</span>
+    </h2>
+
+    <button onclick="changsong()">chang Song</button>
+
+    <script>
+        let songs=["Tu Chaiye","Tere Naina","Qaafirana","Jaan Nisaar","Tum Mile"];
+        let index=0;
+        function changsong(){
+            index++;
+            if(index>=songs.length){
+                index=0;
+            }
+            document.getElementById('curent-song').innerHTML=songs[index];
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #moodbox{
+            width: 250px;
+            height: 150px;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Change Mood Box Colour</h2>
+    <input type="text" id="colourinput" placeholder="Type colour like(Pink,Black..)">
+    <div id="moodbox"></div>
+    <script>
+        let input=document.getElementById('colourinput');
+        let moodbox=document.getElementById('moodbox');
+
+        function changecolour(){
+            moodbox.style.backgroundColor=input.value;
+        }
+        input.addEventListener('input',changecolour);
+    </script>
+</body>
+</html>

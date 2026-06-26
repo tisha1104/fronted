@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        select,input{
+            width: 250px;
+            padding: 8px;
+            margin: 10px 0;
+        }
+
+        #message{
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Zomato Food Order</h2>
+    <label for="">Select cuisine:</label><br>
+    <select name="" id="cuisine" onchange="showcuisine()">
+        <option value="">---choose cuisine---</option>
+        <option>Indian</option>
+        <option>Chinese</option>
+        <option>Italian</option>
+        <option>Mexican</option>
+    </select>
+    <br>
+    <br>
+    <br>
+
+    <label>Quantity:</label>
+    <br>
+    <input type="number" placeholder="Enter quantity">
+
+    <p id="message"></p>
+    <script>
+        function showcuisine(){
+            let selectcuisine=document.getElementById("cuisine").value;
+            document.getElementById("message").innerHTML="You Selected: " + selectcuisine + " cuisine.";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: solid black 2px;
+            border-radius: 50px;
+            background-color: palevioletred;
+            color: pink;
+            margin-left: 550px;
+
+        }
+        h2{
+            margin-left: 550px;
+            margin-top: 10px;
+            padding-top: 5px;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(6, 6, 46);            
+
+        }
+        h3{
+            margin-left: 550px;
+            margin-top: 10px;
+            padding-top: 50px;
+            color: rgb(6, 6, 46);  
+            font-weight: bold;          
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Shopping Cart</h2>
+    <button id="btn">Add to Cart</button>
+    <div id="cart">
+        <h3>Cart Items:</h3>
+    </div>
+    <script>
+        const button=document.querySelector("#btn");
+        const cart=document.querySelector("#cart");
+
+        function addTocart(){
+            let product=prompt("Enter Product Name");
+            if(product !== null && product.trim()!==""){
+                let item=document.createElement("p");
+                item.textContent=product;
+                cart.appendChild(item);
+            }else{
+                alert("Please enter a valid product name.")
+            }
+        }
+        button.addEventListener("click",addTocart);
+    </script>
+</body>
+</html>
