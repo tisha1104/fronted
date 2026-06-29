@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .movie{
+            width: 300px;
+            margin: 15px auto;
+            padding: 15px;
+            background: rgb(212, 62, 62);
+            color:aqua;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        button{
+            margin-top: 10px;
+            padding: 8px 15px;
+            cursor: pointer;
+            background-color: rgb(233, 144, 174);
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>My Favorite Movies</h2>
+    <div class="movie">
+        <h3>The Best Thing</h3>
+        <button>Remove</button>
+    </div>
+
+    <div class="movie">
+        <h3>The Best Day Of My Life</h3>
+        <button>Remove</button>
+    </div>
+    
+    <div class="movie">
+        <h3>When I Fly Towards You</h3>
+        <button>Remove</button>
+    </div>
+    <script>
+        let button=document.querySelectorAll("button");
+        button.forEach(function(button){
+            button.addEventListener("click",function(){
+                button.parentElement.remove();
+            });
+        });
+    </script>
+</body>
+</html>
